@@ -32,20 +32,22 @@ public class JMediaPlayer extends Application {
 
 
         // -- 3. A MediaPlayer allows the mediaview to play the video
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.setAutoPlay(true);
-        mediaView.setMediaPlayer(mediaPlayer);
+        // TODO - create an instance of a mediaplayer and add it to the mediaView.
+
+
+
 
         // -- 4. The movie is loaded asynchronously (i.e. in a different thread). It takes a moment before
         // it is ready to be played. This call back will set the size of the window to match the video size
         // when enough information has been loaded to determine the movie size.
-        mediaPlayer.setOnReady(new Runnable() {
-            @Override
-            public void run() {
-                primaryStage.setWidth(media.getWidth());
-                primaryStage.setHeight(media.getHeight());
-            }
-        });
+        // TODO - after the media player has been added uncomment the code below
+        // mediaPlayer.setOnReady(new Runnable() {
+        //     @Override
+        //     public void run() {
+        //         primaryStage.setWidth(media.getWidth());
+        //         primaryStage.setHeight(media.getHeight());
+        //     }
+        // });
 
 
         primaryStage.setScene(scene);

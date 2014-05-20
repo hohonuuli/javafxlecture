@@ -35,15 +35,16 @@ public class CDrawingText extends Application {
             int green = rand.nextInt(255);
             int blue = rand.nextInt(255);
 
-            Text text = new Text(x, y, "JavaFX 8");
+            // TODO - add a text node at x, y
 
+            // TODO rotate the text node and set its color. add it to the root node
             int rot = rand.nextInt(360);
-            text.setFill(Color.rgb(red, green, blue, 0.99));
-            text.setRotate(rot);
-            root.getChildren().add(text);
+            Color color = Color.rbg(red, green, blue, 0.99)
+
         }
 
         // -- 2. Remember, transforms applied to a node also apply to it's children
+        // TODO - when all is added uncomment the lines below
 //        RotateTransition rotateTransition = new RotateTransition(Duration.seconds(5), root);
 //        rotateTransition.setByAngle(360);
 //        rotateTransition.setCycleCount(30);

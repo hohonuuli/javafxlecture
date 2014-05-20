@@ -25,10 +25,11 @@ public class GEventsAgain extends Application {
         Scene scene = new Scene(root, 400, 400, Color.WHEAT);
 
         // -- 1. Add our custom circle node
-        final Circle circle = new MyCircle(30, Color.RED);
-        circle.setCenterX(200);
-        circle.setCenterY(200);
-        root.getChildren().add(circle);
+        // TODO add one red MyCircle instance of 30px radius at 200, 200 to root
+        final Circle circle = null;
+        
+
+
 
         primaryStage.setScene(scene);
         primaryStage.show();
