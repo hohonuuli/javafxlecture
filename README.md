@@ -2,7 +2,7 @@
 
 Classes for teaching JavaFX
 
-To run a demo use the following command:
+To run a demo use the following command style. Relace `ASimpleApp` with whatever class you are trying to run.
 
 ```
 mvn compile exec:java -Dexec.mainClass=ASimpleApp
