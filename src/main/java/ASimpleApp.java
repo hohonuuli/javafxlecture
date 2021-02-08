@@ -33,9 +33,9 @@ public class ASimpleApp extends Application {
         // TODO - add a scene        
 
 
-        // TODO Uncomment to add a circle to scene
-        //Circle circle = new Circle(20);
-        //root.getChildren().add(circle);
+        // Uncomment to add a circle to scene
+        Circle circle = new Circle(20);
+        root.getChildren().add(circle);
 
 
         // -- 4. Add the scene to the stage and all show to make if visible

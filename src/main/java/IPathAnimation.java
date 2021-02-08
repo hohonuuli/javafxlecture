@@ -1,5 +1,4 @@
 import javafx.animation.PathTransition;
-import javafx.animation.PathTransitionBuilder;
 import javafx.animation.ScaleTransition;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -16,8 +15,6 @@ import javafx.util.Duration;
  * Created by brian on 5/16/14.
  */
 public class IPathAnimation extends Application {
-
-
 
     public static void main(String[] args) {
         launch(args);
@@ -62,7 +59,6 @@ public class IPathAnimation extends Application {
         path.getElements().add(quadCurveTo);
         path.getElements().add(lineTo);
         path.getElements().add(arcTo);
-
 
         // -- 2. Create a circle
         Circle circle = new Circle(100, 100, 20, Color.DARKORCHID);
