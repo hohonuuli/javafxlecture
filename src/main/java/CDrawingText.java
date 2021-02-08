@@ -35,7 +35,7 @@ public class CDrawingText extends Application {
             int green = rand.nextInt(255);
             int blue = rand.nextInt(255);
 
-            Text text = new Text(x, y, "We love Kyra!");
+            Text text = new Text(x, y, "JavaFX rocks!");
 
             int rot = rand.nextInt(360);
             text.setFill(Color.rgb(red, green, blue, 0.99));
