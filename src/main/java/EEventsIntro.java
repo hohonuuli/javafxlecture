@@ -38,26 +38,23 @@ public class EEventsIntro extends Application {
                 //event.getX -> relative to node origin
                 //event.getSceneX -> relative to scene origin
                 //event.getScreenX -> relative to screen orign
-                
-                // TODO - set the text nodes layout x and y values to match the events.
-                // TODO - set the text to be the events -> x + ", " + y
-
-
+                text.setLayoutX(event.getX());
+                text.setLayoutY(event.getY());
+                text.setText(event.getX() + ", " + event.getY());
 
             }
         });
 
         // -- 3. Add a handler for mouse clicks. It adds a red circle to the scene where you clicked
-        // TODO - implement an eventhandler that adds circles where you clicked
-        //scene.setOnMouseClicked();
-
-        
-
-
-
-
-
-
+        scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                Circle circle = new Circle(5, Color.RED);
+                circle.setCenterX(event.getX());
+                circle.setCenterY(event.getY());
+                root.getChildren().add(circle);
+            }
+        });
 
         // -- 4. See http://docs.oracle.com/javase/8/javafx/api/javafx/scene/Scene.html for a zillion more
         // events you can add listeners too.

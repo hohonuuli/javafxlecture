@@ -31,14 +31,12 @@ public class DTranslateExample extends Application {
         Circle circle = new Circle(20);
         root.getChildren().add(circle);
 
-        // TODO - create a TranslateTransition that has seToX and setToY of 400.
-        //        it should also auto-reverese. Don't forget to call play().
-
-
-
-
-
-
+        TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(3), circle);
+        translateTransition.setToX(400);
+        translateTransition.setToY(400);
+        translateTransition.setCycleCount(10);
+        translateTransition.setAutoReverse(true);
+        translateTransition.play();
 
         // -- 4. Add the scene to the stage and all show to make if visible
         primaryStage.setScene(scene);

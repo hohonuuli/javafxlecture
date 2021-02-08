@@ -26,11 +26,11 @@ public class ASimpleApp extends Application {
         // - Group is a node where you explicitly provide coordinates for child nodes
         // - Regions provide layout managers for child nodes. They can also be styled with CSS
         // - WebView is used to render HTML.
-        // TODO - add a root element
+        Group root = new Group();
 
         // -- 3. A scene is added to the stage. THe scene contains the scene graph
         // This construction takes the width, height and a background color
-        // TODO - add a scene        
+        Scene scene = new Scene(root, 400, 400, Color.CORAL);
 
 
         // Uncomment to add a circle to scene
@@ -39,8 +39,8 @@ public class ASimpleApp extends Application {
 
 
         // -- 4. Add the scene to the stage and all show to make if visible
-        // TODO - add a scene to the stage and show the stage
-
+        primaryStage.setScene(scene);
+        primaryStage.show();
 
 
     }
