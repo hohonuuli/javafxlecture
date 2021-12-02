@@ -1,4 +1,4 @@
-# JavaFX 8 Lecture
+# JavaFX Lecture
 
 Classes for teaching JavaFX
 
