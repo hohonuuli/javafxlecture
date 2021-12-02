@@ -8,7 +8,3 @@ To run a demo use the following command style. Relace `ASimpleApp` with whatever
 mvn compile exec:java -Dexec.mainClass=ASimpleApp
 ```
 
-To get the code do:
-```
-git checkout code
-```
