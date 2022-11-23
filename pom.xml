@@ -11,7 +11,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <javafx.version>17.0.1</javafx.version>
+        <javafx.version>19</javafx.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -28,6 +28,11 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
             <version>${javafx.version}</version>
         </dependency>
         <dependency>
