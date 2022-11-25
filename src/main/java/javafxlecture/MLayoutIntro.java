@@ -1,3 +1,4 @@
+package javafxlecture;
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;

@@ -1,3 +1,4 @@
+package javafxlecture;
 import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.scene.Group;

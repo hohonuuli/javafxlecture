@@ -1,4 +1,4 @@
-package canvastest;
+package javafxlecture.canvastest;
 
 import javafx.application.Application;
 import javafx.scene.Group;

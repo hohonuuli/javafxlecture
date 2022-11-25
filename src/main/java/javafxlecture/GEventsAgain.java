@@ -1,17 +1,18 @@
+package javafxlecture;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
  * Created by brian on 5/16/14.
  */
-public class FEventsAgain extends Application {
+public class GEventsAgain extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -24,27 +25,32 @@ public class FEventsAgain extends Application {
         final Group root = new Group();
         Scene scene = new Scene(root, 400, 400, Color.WHEAT);
 
-        // -- 1. Add a cirle node
-        final Circle circle = new Circle(30, Color.RED);
+        // -- 1. Add our custom circle node
+        final Circle circle = new MyCircle(30, Color.RED);
         circle.setCenterX(200);
         circle.setCenterY(200);
         root.getChildren().add(circle);
 
-        // -- 2. Toggle the circles' color when it's clicked
-        circle.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                if (circle.getFill().equals(Color.RED)) {
-                    circle.setFill(Color.BLUE);
-                }
-                else {
-                    circle.setFill(Color.RED);
-                }
-            }
-        });
-
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+}
+
+class MyCircle extends Circle {
+
+    public MyCircle(double radius, Paint fill) {
+        super(radius, fill);
+        setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                if (getFill().equals(Color.RED)) {
+                    setFill(Color.BLUE);
+                }
+                else {
+                    setFill(Color.RED);
+                }
+            }
+        });
+    }
+
 }

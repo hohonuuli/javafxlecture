@@ -1,3 +1,4 @@
+package javafxlecture;
 import javafx.application.Application;
 import javafx.embed.swing.SwingNode;
 import javafx.scene.Scene;

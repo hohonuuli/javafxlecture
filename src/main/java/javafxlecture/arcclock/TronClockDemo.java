@@ -1,4 +1,4 @@
-package arcclock;
+package javafxlecture.arcclock;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;

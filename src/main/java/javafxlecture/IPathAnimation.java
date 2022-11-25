@@ -1,3 +1,4 @@
+package javafxlecture;
 import javafx.animation.PathTransition;
 import javafx.animation.ScaleTransition;
 import javafx.application.Application;
