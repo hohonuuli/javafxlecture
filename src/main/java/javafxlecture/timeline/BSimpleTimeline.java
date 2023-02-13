@@ -135,7 +135,7 @@ public class BSimpleTimeline extends Application {
         .multiply(charCode - 65)
         .add(horizontalAxis.startYProperty());
 			label.layoutYProperty().bind(incremProp);
-			label.setStyle("-fx-font-weight: bold; -fx-font-size: 12px;");
+			label.setStyle("-fx-font-weight: bold; -fx-font-size: 16px;");
 			var fillCalc = ColorUtil.stringToColor(d.anno.name());
       var fill = new Color(fillCalc.getRed(), fillCalc.getGreen(), fillCalc.getBlue(), 0.7);
 			label.setTextFill(fill);
@@ -148,7 +148,7 @@ public class BSimpleTimeline extends Application {
 			line.startYProperty().bind(horizontalAxis.startYProperty());
 			line.endYProperty().bind(label.layoutYProperty());
 
-			var lightStroke = new Color(fill.getRed(), fill.getGreen(), fill.getBlue(), 0.10);
+			var lightStroke = new Color(fill.getRed(), fill.getGreen(), fill.getBlue(), 0.15);
 			var heavyStroke = new Color(fill.getRed(), fill.getGreen(), fill.getBlue(), 1);
 			line.setStroke(lightStroke);
 
@@ -163,7 +163,7 @@ public class BSimpleTimeline extends Application {
 			label.setOnMouseExited(evt -> Platform.runLater(() -> {
 				line.setStroke(lightStroke);
 				line.setStrokeWidth(3);
-				label.setStyle("-fx-font-weight: bold; -fx-font-size: 12px;");
+				label.setStyle("-fx-font-weight: bold; -fx-font-size: 16px;");
         label.setText(d.anno().name().charAt(0) + "");
         label.setTextFill(fill);
 			}));
