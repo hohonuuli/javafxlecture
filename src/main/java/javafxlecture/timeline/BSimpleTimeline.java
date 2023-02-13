@@ -59,7 +59,8 @@ public class BSimpleTimeline extends Application {
 
 			// Draw the minute lines
 			int numMinutes = NUM_MINUTES;
-			distanceBetweenMinutesProperty = horizontalAxis.endXProperty().subtract(horizontalAxis.startXProperty())
+			distanceBetweenMinutesProperty = horizontalAxis.endXProperty()
+          .subtract(horizontalAxis.startXProperty())
 					.divide(numMinutes);
 
 			for (int i = 0; i <= numMinutes; i++) {
@@ -129,7 +130,7 @@ public class BSimpleTimeline extends Application {
 			label.setText(shortName);
 			label.layoutXProperty().bind(xProp.subtract(label.widthProperty().divide(2)));
       var incremProp = root.heightProperty()
-        .subtract(OFFSET)
+        .subtract(OFFSET * 2)
         .subtract(horizontalAxis.startYProperty())
         .divide(26)
         .multiply(charCode - 65)
@@ -206,6 +207,8 @@ public class BSimpleTimeline extends Application {
 		var controller = new Controller();
     seed(controller);
 		primaryStage.setScene(new javafx.scene.Scene(controller.getRoot()));
+    primaryStage.setWidth(500);
+    primaryStage.setHeight(500);
 		primaryStage.show();
 	}
 
