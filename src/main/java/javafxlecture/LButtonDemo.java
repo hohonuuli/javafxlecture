@@ -29,15 +29,12 @@ public class LButtonDemo extends Application {
         btn.setLayoutY(80);
 
         // --- 2. Add an EventHandler to do something when the button is clicked
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World");
-                RotateTransition rt = new RotateTransition(Duration.millis(1000), btn);
-                rt.setByAngle(360);
-                rt.setCycleCount(1);
-                rt.play();
-            }
-        });
+        // TODO - Add an eventhandler that prints "Hello World" to the console.
+        // TODO - In the eventhandler add a RotateTransition to spin the button when clicked.        
+
+
+
+
         root.getChildren().add(btn);
         primaryStage.setScene(scene);
         primaryStage.show();

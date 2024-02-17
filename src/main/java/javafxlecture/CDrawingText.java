@@ -36,26 +36,28 @@ public class CDrawingText extends Application {
             int green = rand.nextInt(255);
             int blue = rand.nextInt(255);
 
-            Text text = new Text(x, y, "JavaFX rocks!");
+            // TODO - add a text node at x, y
 
+            // TODO rotate the text node and set its color. add it to the root node
             int rot = rand.nextInt(360);
-            text.setFill(Color.rgb(red, green, blue, 0.99));
-            text.setRotate(rot);
-            root.getChildren().add(text);
+
+            Color color = Color.color(red, green, blue, 0.99);
+
         }
 
         // -- 2. Remember, transforms applied to a node also apply to it's children
-        RotateTransition rotateTransition = new RotateTransition(Duration.seconds(5), root);
-        rotateTransition.setByAngle(360);
-        rotateTransition.setCycleCount(30);
-        rotateTransition.play();
-
-        ScaleTransition scaleTransition = new ScaleTransition(Duration.seconds(3), root);
-        scaleTransition.setByX(8.5);
-        scaleTransition.setByY(8.5f);
-        scaleTransition.setCycleCount(100);
-        scaleTransition.setAutoReverse(true);
-        scaleTransition.play();
+        // TODO - when all is added uncomment the lines below
+//        RotateTransition rotateTransition = new RotateTransition(Duration.seconds(5), root);
+//        rotateTransition.setByAngle(360);
+//        rotateTransition.setCycleCount(30);
+//        rotateTransition.play();
+//
+//        ScaleTransition scaleTransition = new ScaleTransition(Duration.seconds(3), root);
+//        scaleTransition.setByX(8.5);
+//        scaleTransition.setByY(8.5f);
+//        scaleTransition.setCycleCount(100);
+//        scaleTransition.setAutoReverse(true);
+//        scaleTransition.play();
 
         primaryStage.setScene(scene);
         primaryStage.show();

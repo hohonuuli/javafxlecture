@@ -31,25 +31,20 @@ public class BSceneGraph extends Application {
 
 
         // -- 2. We can shift the node relative to it's parent's coordinates
-        subnode.setLayoutX(100);
-        subnode.setLayoutY(100);
-        root.getChildren().add(subnode);
+        // TODO - shift the node +100 x and y relative to it's parent
+
+
 
         // -- 3. Add some objects to subnode
         // More shapes at http://docs.oracle.com/javase/8/javafx/api/javafx/scene/shape/package-summary.html
-        Rectangle rectangle = new Rectangle(50, 50);
-        rectangle.setLayoutX(50);
-        rectangle.setLayoutY(50);
-        rectangle.setFill(Color.BLUE);
-        subnode.getChildren().add(rectangle);
+        // TODO - create a 50x50 Blue rectangle offset 50, 50 from it's parent. Add to the subnode
 
-        Circle circle = new Circle(30);
-        circle.setCenterX(100); // You could also use the layoutX property which is the upper-left corner of circle
-        circle.setCenterY(90);
-        circle.setFill(Color.RED);
-        subnode.getChildren().add(circle);
+        // TODO - create a 30px radius Red circle at 100, 90.
+
+
 
         // -- 4. Transforms applied to a node also apply to it's children
+        // TODO after everything is displayed. Uncomment the lines below
         //RotateTransition rotateTransition = new RotateTransition(Duration.seconds(5), subnode);
         //rotateTransition.setByAngle(360);
         //rotateTransition.setCycleCount(30);

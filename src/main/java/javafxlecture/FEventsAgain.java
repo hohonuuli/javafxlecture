@@ -35,13 +35,17 @@ public class FEventsAgain extends Application {
         circle.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                if (circle.getFill().equals(Color.RED)) {
-                    circle.setFill(Color.BLUE);
-                }
-                else {
-                    circle.setFill(Color.RED);
-                }
+                
+                // TODO - Choose 2 colors. On a mouse click toggle between them
+
+
+
+
             }
+        });
+        
+        circle.setOnMouseClicked(evt -> {
+            circle.setFill(circle.getFill() == Color.RED ? Color.BLUE : Color.RED);
         });
 
 

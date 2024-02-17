@@ -21,19 +21,16 @@ public class KWebView extends Application {
 
         primaryStage.setTitle(getClass().getSimpleName());
 
-        // --- 1. Create a WebView. It is an instance of javafx.scene.Parent so it can
-        // be
+        // --- 1. Create a WebView. It is an instance of javafx.scene.Parent so it can be
         // added directly to the scene (i.e. you don't need to create a Group node)
-        WebView webView = new WebView();
-        Scene scene = new Scene(webView, 600, 500, Color.CORAL);
+        // TODO - create an instance of a WebView and add it to a Scene
 
-        // --- 2. Tell it which web site to load. The WebEngine has built in support for
-        // scrolling and
+        // --- 2. Tell it which web site to load. The WebEngine has built in support for scrolling and
         // mouse events
-        WebEngine webEngine = webView.getEngine();
-        webEngine.load("http://www.mbari.org");
+        // TODO - create a web engine and use it's load method to display a web page
+        
 
-        primaryStage.setScene(scene);
+        // primaryStage.setScene(scene);
         primaryStage.show();
 
     }
