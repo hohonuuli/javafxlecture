@@ -28,29 +28,15 @@ public class HKeyEvents extends Application {
         Scene scene = new Scene(root, 800, 600, Color.BLACK);
 
         // -- 1. Add a circle
-        final Circle circle = new Circle(400, 300, 10, Color.RED);
-        root.getChildren().add(circle);
+
 
         // -- 2. Add an image of our bug using ImageView
-        Image image  = new Image("bug-icon.png");
-        final ImageView iv = new ImageView(image);
-        iv.setFitWidth(60);
-        iv.setPreserveRatio(true);
-        iv.setSmooth(true);
-        iv.setCache(true);
-        root.getChildren().add(iv);
+
 
         // -- 3. Create a event handler for when a key is pressed.
-        EventHandler<KeyEvent> kh2 = new MyKeyEventHandler(iv);
-        scene.setOnKeyPressed(kh2);
+
 
         // -- 4. When a key is released check to see if the circle and image intersect
-        scene.setOnKeyReleased(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent keyEvent) {
-                consume(circle, iv);
-            }
-        });
 
 
         stage.setScene(scene);
